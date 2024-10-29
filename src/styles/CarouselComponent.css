@@ -1,0 +1,203 @@
+.carousel-container {
+    padding: 0;
+    flex: 1;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel {
+    z-index: 5;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+  .bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .event-info p {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: larger;
+    white-space: pre-line;
+    flex-grow: 1;
+  }
+  .event-info span {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    white-space: pre-line;
+    flex-grow: 1;
+  }
+  .event-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    text-align: left;
+    width: 100%;
+    max-width: 490px;
+    height: 100%;
+    max-height: 594px;
+    z-index: 4;
+    overflow: hidden;
+    position: relative;
+    background-color: none;
+  }
+  
+  .button-info {
+    align-self: flex-end;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: medium;
+    align-self: center;
+    margin-left: 8.5rem;
+    margin-top: auto;
+    color: #000000 !important;
+    background: none !important;
+    border: none !important;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .button-info:hover {
+    background:rgb(34, 23, 132) !important;
+    color: #ffffff !important;
+  }
+  
+  .button-info:active {
+    background: none;
+    transform: scale(0.9);
+  }
+  
+  .carousel-info-container {
+    margin-top: 4rem !important;
+    display: flex;
+    z-index: 4;
+    flex-direction: row;
+    width: 100%;
+    border: 0px solid #dddddd43;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 0px #9f9d9d31;
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-image: none;
+    background-color: transparent;
+  }
+  
+  .carousel-control-prev-icon::before,
+  .carousel-control-next-icon::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: solid #ffffff;
+    border-width: 0 5px 5px 0;
+    padding: 3px;
+  }
+  
+  .carousel-control-prev-icon::before {
+    transform: rotate(135deg);
+    margin-left: 1.5rem;
+  }
+  
+  .carousel-control-next-icon::before {
+    transform: rotate(-45deg);
+    margin-right: 10rem;
+  }
+  
+  .carousel-control-prev:focus,
+  .carousel-control-next:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .carousel-control-prev:active,
+  .carousel-control-next:active {
+    transform: scale(0.9);
+  }
+  
+  .carousel-indicators [data-bs-target] {
+    background-color: #ffffff;
+  }
+  
+  @media (max-width: 1360px) {
+    .carousel-info-container {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1rem ;
+
+    }
+    .button-info {
+      font-weight: auto;
+      font-size: 50%;
+      margin-left: auto;
+      padding: auto;
+      width: auto;
+    }
+    .event-info p {
+      font-size: 50%;
+      white-space: pre-line;
+    }
+    .event-info span {
+      font-family: "Anton", sans-serif;
+      font-size: 50%;
+      font-weight: 400;
+      font-style: normal;
+    }
+  
+    .event-info {
+      margin-left: 0;
+      text-align: left;
+      padding: 1rem 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-info-container {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1rem ;
+
+    }
+    .button-info {
+      font-weight: auto;
+      font-size: 50%;
+      margin-left: auto;
+      padding: auto;
+      width: auto;
+    }
+    .event-info p {
+      font-size: 50%;
+      white-space: pre-line;
+    }
+    .event-info span {
+      font-family: "Anton", sans-serif;
+      font-size: 50%;
+      font-weight: 400;
+      font-style: normal;
+    }
+  
+    .event-info {
+      margin-left: 0;
+      text-align: left;
+      padding: 1rem 0;
+    }
+  }

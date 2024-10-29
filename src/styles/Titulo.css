@@ -1,0 +1,24 @@
+.titulo-container {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .titulo-imagen {
+    width: 250px;
+    height: auto;
+    margin-right: 60px;
+  }
+  
+  .titulo-texto {
+    font-size: 170px;
+    color: #62d630;
+  }
+  
+  .titulo-texto strong {
+    font-weight: bold;
+    color: #1f335d;
+  }
+  
